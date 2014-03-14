@@ -1,0 +1,157 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 07-mar-2014, 0:11:22
+    Author     : miguel
+*/
+* {
+    margin: 0;
+    padding: 0;
+    border: 0 none;
+    outline: 0 none;
+}
+body {
+    font-family: sans-serif;
+    font-size: 16px;
+    background-color: beige;
+}
+h1 {
+    padding: 10px;
+    background-color: beige;
+}
+h2 {
+    margin: 10px 20px;
+    font-size: 32px;
+    font-variant: small-caps;
+}
+h3 {
+    padding: 12px;
+    background-color: beige;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+form {
+    padding: 30px 0 20px;
+    font-size: 13px;
+}
+fieldset {
+    background-color: beige;
+    padding: 10px;
+}
+legend {
+    padding: 5px 20px;
+    font-weight: bold;
+    background-color: beige;
+    border: 2px solid beige;
+    position: relative;
+    top: -10px;
+    left: -10px;
+}
+input {
+    border: 1px solid olivedrab;
+    padding: 3px;
+    margin: 3px 0 0;
+}
+input[type="submit"] {
+    background-color: darkkhaki;
+    padding: 3px 10px;
+}
+input[type="submit"]:hover {
+    background-color: sandybrown;
+
+}
+form td {
+    padding: 0 10px 10px;
+}
+#wrapper_container {
+    padding: 18px;
+}
+#container {
+    width: 800px;
+    margin: 0 auto;
+    border: 3px solid beige;
+    outline: 4px solid khaki;
+    padding: 15px;
+    background-color: khaki;
+}
+#wrapper_tablahorarios {
+    background-color: beige;
+    padding: 20px 0;
+}
+#tablahorarios {
+    font-size: 11px;
+    margin: 10px auto 20px;
+    background-color: beige;
+
+}
+.tdhora {
+    text-align: center;
+    font-weight: bold;
+    font-size: 10px;
+    padding: 10px 0 5px;
+    background-color: khaki;
+}
+#tablahorarios a {
+    display: block;
+    text-decoration: none;
+    line-height: 25px;
+    width: 85px;
+    text-align: center;
+}
+#tablahorarios p {
+    padding: 2px 0 2px 27px;
+}
+#tablahorarios p:last-child {
+    padding: 2px 0 15px 27px;
+}
+.cuadrohora {
+    border: 1px solid khaki;
+}
+.cuadrohora a:hover {
+    background-color: khaki;
+}
+#footer {
+    text-align: center;
+    margin: 30px 0 10px;
+    color: darkkhaki;
+}
+#navegadorpistas a {
+    display: inline !important;
+}
+#navegadorpistas p:first-child {
+    padding: 30px 0 0 10px;
+    font-size: 15px;
+    font-weight: bold;
+}
+#usuarioconectado {
+    background-color: beige;
+    margin: 22px 0;
+    padding: 10px;
+    font-size: 12px;
+}
+#usuarioconectado p {
+    padding: 3px;
+}
+.reservado {
+    background-color: tan !important;
+}
+.fechapasada {
+    background-color: lightgray !important;
+    color: burlywood;
+}
+.mensaje_err {
+    background-color: lightpink;
+    padding: 10px;
+    margin-top: 15px;
+}
+.mensaje_inf {
+    background-color: palegreen;
+    padding: 10px;
+    margin-top: 15px;
+}
+

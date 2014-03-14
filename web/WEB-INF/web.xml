@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.0" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
+    <description>app practica</description>
+
+    <display-name>Reservas pistas de padel</display-name>
+
+    <context-param>
+        <param-name>webmaster</param-name>
+        <param-value>nmcqmh_lmza@hotmail.com</param-value>
+    </context-param>
+
+    <listener>
+        <description>ServletContextListener</description>
+        <listener-class>com.reservas.controller.ReservasServletListener</listener-class>
+    </listener>
+
+    <servlet>
+        <servlet-name>controller</servlet-name>
+        <servlet-class>com.reservas.controller.ControllerServlet</servlet-class>
+        <init-param>
+            <param-name>registro</param-name>
+            <param-value>registrarUsuario</param-value>
+        </init-param>
+        <init-param>
+            <param-name>login</param-name>
+            <param-value>loginUsuario</param-value>
+        </init-param>
+        <init-param>
+            <param-name>logout</param-name>
+            <param-value>logoutUsuario</param-value>
+        </init-param>
+        <init-param>
+            <param-name>reservar</param-name>
+            <param-value>reservarPista</param-value>
+        </init-param>
+    </servlet>
+
+    <servlet>
+        <servlet-name>reservarPista</servlet-name>
+        <servlet-class>com.reservas.actions.ReservarPistaAction</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>registrarUsuario</servlet-name>
+        <servlet-class>com.reservas.actions.RegistrarUsuarioAction</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>loginUsuario</servlet-name>
+        <servlet-class>com.reservas.actions.LoginUsuarioAction</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>logoutUsuario</servlet-name>
+        <servlet-class>com.reservas.actions.LogoutUsuarioAction</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>controller</servlet-name>
+        <url-pattern>*.do</url-pattern>
+    </servlet-mapping>
+
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+
+    <welcome-file-list>
+        <welcome-file>index.jsp</welcome-file>
+    </welcome-file-list>
+
+    <error-page>
+        <exception-type>java.lang.Throwable</exception-type>
+        <location>/WEB-INF/plantillas/error.jsp</location>
+    </error-page>
+
+    <error-page>
+        <error-code>404</error-code>
+        <location>/WEB-INF/plantillas/error.jsp</location>
+    </error-page>
+</web-app>
